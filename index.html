@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HAPPY BIRTHDAY KAKAAK PIAAA 🌊</title>
+
+<style>
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   LAUT
+========================= */
+
+.ocean {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+    padding: 35px 15px 180px;
+
+    background:
+        radial-gradient(
+            ellipse at 50% -10%,
+            rgba(255,255,255,0.55),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            to bottom,
+            #66e4ed 0%,
+            #26b8da 22%,
+            #087fae 48%,
+            #04547f 72%,
+            #012d4c 100%
+        );
+}
+
+
+/* =========================
+   CAHAYA AIR
+========================= */
+
+.light {
+    position: absolute;
+
+    top: -150px;
+
+    width: 100px;
+    height: 750px;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(255,255,255,0.38),
+        rgba(255,255,255,0)
+    );
+
+    filter: blur(12px);
+
+    transform: rotate(12deg);
+
+    opacity: 0.5;
+
+    pointer-events: none;
+}
+
+.light1 {
+    left: 8%;
+}
+
+.light2 {
+    left: 35%;
+    height: 600px;
+    transform: rotate(-8deg);
+    opacity: 0.3;
+}
+
+.light3 {
+    right: 12%;
+    height: 700px;
+    transform: rotate(-15deg);
+    opacity: 0.35;
+}
+
+
+/* =========================
+   PERMUKAAN AIR
+========================= */
+
+.surface {
+    position: absolute;
+
+    top: 0;
+    left: -5%;
+
+    width: 110%;
+    height: 55px;
+
+    background:
+        radial-gradient(
+            ellipse at center,
+            rgba(255,255,255,0.45),
+            transparent 65%
+        );
+
+    filter: blur(5px);
+
+    animation: surfaceMove 5s ease-in-out infinite alternate;
+}
+
+@keyframes surfaceMove {
+
+    from {
+        transform: translateX(-15px);
+    }
+
+    to {
+        transform: translateX(15px);
+    }
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+
+    position: relative;
+
+    z-index: 20;
+
+    width: 100%;
+    max-width: 650px;
+
+    margin: auto;
+
+    padding: 28px 22px 30px;
+
+    border-radius: 30px;
+
+    background:
+        rgba(0, 55, 85, 0.38);
+
+    border:
+        1px solid rgba(255,255,255,0.45);
+
+    box-shadow:
+        0 20px 70px rgba(0,0,0,0.35),
+        inset 0 0 40px rgba(255,255,255,0.06);
+
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+    color: white;
+}
+
+
+/* =========================
+   FOTO
+========================= */
+
+.birthday {
+
+    display: block;
+
+    width: 165px;
+    height: 165px;
+
+    margin: 0 auto 18px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 6px solid white;
+
+    box-shadow:
+        0 0 25px rgba(255,255,255,0.65);
+
+    clip-path: circle(50%);
+
+}
+
+
+/* =========================
+   JUDUL
+========================= */
+
+h1 {
+
+    text-align: center;
+
+    font-size: 42px;
+
+    margin-bottom: 8px;
+
+    text-shadow:
+        0 4px 15px rgba(0,0,0,0.35);
+}
+
+.subtitle {
+
+    text-align: center;
+
+    font-size: 18px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   TEKS BERJALAN
+========================= */
+
+.ticker {
+
+    overflow: hidden;
+
+    white-space: nowrap;
+
+    padding: 12px 0;
+
+    margin-bottom: 25px;
+
+    border-top:
+        1px solid rgba(255,255,255,0.25);
+
+    border-bottom:
+        1px solid rgba(255,255,255,0.25);
+}
+
+.ticker span {
+
+    display: inline-block;
+
+    padding-left: 100%;
+
+    font-weight: bold;
+
+    animation:
+        ticker 14s linear infinite;
+}
+
+@keyframes ticker {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* =========================
+   PESAN
+========================= */
+
+.message {
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+.message p {
+
+    margin-bottom: 20px;
+}
+
+.important {
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   AUDIO
+========================= */
+
+.music {
+
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top:
+        1px solid rgba(255,255,255,0.25);
+}
+
+.music-title {
+
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+
+audio {
+
+    width: 100%;
+}
+
+
+/* =========================
+   BUBBLE
+========================= */
+
+.bubble {
+
+    position: absolute;
+
+    bottom: -30px;
+
+    border:
+        2px solid rgba(255,255,255,0.55);
+
+    border-radius: 50%;
+
+    z-index: 10;
+
+    animation:
+        bubbleUp 9s linear infinite;
+}
+
+.b1 {
+    left: 7%;
+    width: 13px;
+    height: 13px;
+}
+
+.b2 {
+    left: 18%;
+    width: 7px;
+    height: 7px;
+    animation-delay: 2s;
+}
+
+.b3 {
+    left: 42%;
+    width: 18px;
+    height: 18px;
+    animation-delay: 4s;
+}
+
+.b4 {
+    left: 67%;
+    width: 10px;
+    height: 10px;
+    animation-delay: 1s;
+}
+
+.b5 {
+    left: 87%;
+    width: 16px;
+    height: 16px;
+    animation-delay: 3s;
+}
+
+@keyframes bubbleUp {
+
+    0% {
+        transform:
+            translateY(0)
+            translateX(0);
+
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 0.8;
+    }
+
+    50% {
+        transform:
+            translateY(-50vh)
+            translateX(20px);
+    }
+
+    100% {
+        transform:
+            translateY(-115vh)
+            translateX(-20px);
+
+        opacity: 0;
+    }
+}
+
+
+/* =========================
+   IKAN
+========================= */
+
+.fish {
+
+    position: absolute;
+
+    z-index: 8;
+
+    left: -80px;
+
+    font-size: 35px;
+
+    animation:
+        swim 17s linear infinite;
+}
+
+.fish1 {
+    top: 28%;
+}
+
+.fish2 {
+    top: 52%;
+    font-size: 27px;
+    animation-delay: 5s;
+}
+
+.fish3 {
+    top: 70%;
+    font-size: 22px;
+    animation-delay: 9s;
+}
+
+@keyframes swim {
+
+    from {
+        transform:
+            translateX(-80px);
+    }
+
+    to {
+        transform:
+            translateX(115vw);
+    }
+}
+
+
+/* =========================
+   DASAR LAUT
+========================= */
+
+.seabed {
+
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 190px;
+
+    z-index: 1;
+
+    background:
+
+        radial-gradient(
+            ellipse at 15% 100%,
+            #a98b59 0 12%,
+            transparent 13%
+        ),
+
+        radial-gradient(
+            ellipse at 50% 100%,
+            #c0a16a 0 18%,
+            transparent 19%
+        ),
+
+        radial-gradient(
+            ellipse at 85% 100%,
+            #91754e 0 15%,
+            transparent 16%
+        ),
+
+        linear-gradient(
+            to top,
+            #806746,
+            #806746 20%,
+            transparent 80%
+        );
+}
+
+
+/* =========================
+   BATU KARANG
+========================= */
+
+.rock {
+
+    position: absolute;
+
+    bottom: 55px;
+
+    z-index: 4;
+
+    border-radius:
+        55% 45% 40% 60%;
+}
+
+.rock1 {
+
+    left: 5%;
+
+    width: 100px;
+    height: 75px;
+
+    background:
+        radial-gradient(
+            circle at 30% 30%,
+            #755f55,
+            #3d4650
+        );
+}
+
+.rock2 {
+
+    right: 7%;
+
+    width: 130px;
+    height: 90px;
+
+    background:
+        radial-gradient(
+            circle at 60% 25%,
+            #80635e,
+            #3b4550
+        );
+}
+
+
+/* =========================
+   KARANG WARNA-WARNI
+========================= */
+
+.coral {
+
+    position: absolute;
+
+    z-index: 6;
+
+    bottom: 45px;
+
+    border-radius:
+        50% 50% 10% 10%;
+
+    box-shadow:
+        10px -15px 0 -4px currentColor,
+        -12px -25px 0 -7px currentColor,
+        5px -38px 0 -9px currentColor;
+}
+
+.coral1 {
+
+    left: 4%;
+
+    width: 55px;
+    height: 75px;
+
+    color: #ff718c;
+
+    background: #ff718c;
+
+    transform: rotate(-8deg);
+}
+
+.coral2 {
+
+    left: 12%;
+
+    width: 45px;
+    height: 95px;
+
+    color: #a878ff;
+
+    background: #a878ff;
+
+    transform: rotate(10deg);
+}
+
+.coral3 {
+
+    right: 5%;
+
+    width: 65px;
+    height: 90px;
+
+    color: #ff9d5c;
+
+    background: #ff9d5c;
+
+    transform: rotate(7deg);
+}
+
+.coral4 {
+
+    right: 15%;
+
+    width: 42px;
+    height: 70px;
+
+    color: #ff65b5;
+
+    background: #ff65b5;
+
+    transform: rotate(-8deg);
+}
+
+
+/* =========================
+   RUMPUT LAUT
+========================= */
+
+.seaweed {
+
+    position: absolute;
+
+    bottom: 25px;
+
+    z-index: 7;
+
+    width: 12px;
+
+    border-radius:
+        100% 0 100% 0;
+
+    background:
+        linear-gradient(
+            to top,
+            #07533f,
+            #21aa76
+        );
+
+    transform-origin: bottom;
+
+    animation:
+        sway 4s ease-in-out infinite alternate;
+}
+
+.sw1 {
+    left: 25%;
+    height: 125px;
+}
+
+.sw2 {
+    left: 29%;
+    height: 90px;
+    animation-delay: 1s;
+}
+
+.sw3 {
+    right: 25%;
+    height: 140px;
+    animation-delay: 0.5s;
+}
+
+.sw4 {
+    right: 29%;
+    height: 100px;
+    animation-delay: 1.5s;
+}
+
+@keyframes sway {
+
+    from {
+        transform: rotate(-9deg);
+    }
+
+    to {
+        transform: rotate(9deg);
+    }
+}
+
+
+/* =========================
+   BINTANG LAUT
+========================= */
+
+.star {
+
+    position: absolute;
+
+    z-index: 7;
+
+    bottom: 35px;
+
+    font-size: 40px;
+
+    filter:
+        drop-shadow(0 3px 5px rgba(0,0,0,0.3));
+}
+
+.star1 {
+    left: 25px;
+}
+
+.star2 {
+    right: 35px;
+    font-size: 30px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    font-size: 13px;
+
+    opacity: 0.75;
+}
+
+
+/* =========================
+   HP
+========================= */
+
+@media (max-width: 480px) {
+
+    .ocean {
+        padding:
+            25px 12px 170px;
+    }
+
+    .card {
+        padding:
+            25px 16px 25px;
+    }
+
+    .birthday {
+        width: 150px;
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .message {
+        font-size: 15px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<div class="ocean">
+
+
+    <!-- CAHAYA LAUT -->
+
+    <div class="light light1"></div>
+    <div class="light light2"></div>
+    <div class="light light3"></div>
+
+    <div class="surface"></div>
+
+
+    <!-- BUBBLE -->
+
+    <div class="bubble b1"></div>
+    <div class="bubble b2"></div>
+    <div class="bubble b3"></div>
+    <div class="bubble b4"></div>
+    <div class="bubble b5"></div>
+
+
+    <!-- IKAN -->
+
+    <div class="fish fish1">🦑</div>
+    <div class="fish fish2">🐟</div>
+    <div class="fish fish3">🐠</div>
+    <div class="fish fish4">🐳</div>
+
+    <!-- DASAR LAUT -->
+
+    <div class="seabed"></div>
+
+
+    <!-- BATU -->
+
+    <div class="rock rock1"></div>
+    <div class="rock rock2"></div>
+
+
+    <!-- TERUMBU -->
+
+    <div class="coral coral1"></div>
+    <div class="coral coral2"></div>
+    <div class="coral coral3"></div>
+    <div class="coral coral4"></div>
+
+
+    <!-- RUMPUT LAUT -->
+
+    <div class="seaweed sw1"></div>
+    <div class="seaweed sw2"></div>
+    <div class="seaweed sw3"></div>
+    <div class="seaweed sw4"></div>
+
+
+    <!-- BINTANG LAUT -->
+
+    <div class="star star1">⭐</div>
+    <div class="star star2">⭐</div>
+
+
+    <!-- =====================
+         CARD
+    ====================== -->
+
+    <div class="card">
+
+
+        <!-- FOTO -->
+
+        <img
+            src="habede.jpg"
+            class="birthday"
+            alt="habede.jpg"
+        >
+
+
+        <!-- JUDUL -->
+
+        <h1>
+            Hai piaaa! 🐚
+        </h1>
+
+
+        <div class="subtitle">
+            Happy Birthdayyy 🎂🌊🤍
+        </div>
+
+
+        <!-- TEKS BERJALAN -->
+
+        <div class="ticker">
+
+            <span>
+                🌊 selamat ulang tahun novia 🐚
+                semoga selalu bahagia 🤍 🌊
+            </span>
+
+        </div>
+
+
+        <!-- PESAN -->
+
+        <div class="message">
+
+
+            <p>
+
+                happy special birthday!
+                hihi kakak tau gaa aku belajar
+                coding buat gift ini demi kamuu hihi.
+
+            </p>
+
+
+            <p>
+
+                sekarang umur kakak 19 tahun yaa?
+                semoga di umur kakak yang baru ini
+                kakak selalu dikelilingi sama hal baik,
+                semoga semua doa kakak dikabulkan
+                pelan pelan.
+
+            </p>
+
+
+            <p class="important">
+
+                mungkin ini ga seberapa,
+                TAPI AKU MASIH PUNYA HADIAH LAIN KOK.
+                HARUSNYA KAKAK BAKAL SUKA SAMA HADIAH AKUU.
+
+                uhm jujur this is my first time
+                buat kayak gini 😭😭
+                but for you, i would. kakak, jangan ragu buat minta tolong ke aku yaa kalau ada apa apa, i'll be there as soon as possible 
+
+            </p>
+
+
+            <p>
+
+                mungkin kakak cuma anggap aku
+                sebagai teman gak lebih,
+                but thank uuu so much udah jadi
+                orang yang berarti buat aku.
+
+            </p>
+
+
+            <p>
+
+                dari kakak juga aku belajar banyak hal,
+                aku suka sama mindset kakak hihi.
+
+                aku cuma mau bilang makasih
+                udah hadir di hidup akuu.
+
+                aku mau berubah jadi lebih baik
+                karena kakak juga.
+
+                thank you so much.
+
+                aku bakal jadi orang yang selalu
+                ada disamping kamu,
+
+                disaat dunia mungkin lagi jahat
+                sama kakak,
+
+                i'll be ur biggest supporter 🤍🤍
+
+            </p>
+
+
+            <p>
+
+                sekali lagi,
+
+                happy birthday piaaa 🎂🤍
+
+                semoga diumur yang baru ini
+                jadi bakal jadi awal yang baik
+                bagi kakak.
+
+            </p>
+
+
+            <p>
+
+                fyi ajaa,
+                ini pure kata kata yang aku
+                pikirin sendiri.
+
+                pure dari hati aku,
+                tanpa bantuan chatgpt hihi 😭
+
+            </p>
+
+
+            <p>
+
+                semoga kakak engga bingung
+                sama kalimat yang aku susun 😭
+
+            </p>
+
+
+        </div>
+
+
+        <!-- MUSIK -->
+
+        <div class="music">
+
+            <div class="music-title">
+                🎵 lagu buat kakak🤍🤍
+            </div>
+<audio controls src="cf7165ca-0a1e-4fa4-8e9c-953e7574ffff.mp3"</audio>
+
+        </div>
+
+
+        <div class="footer">
+
+            made with effort & a little bit of coding 🐚🤍
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+</body>
+</html>
